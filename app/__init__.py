@@ -1,7 +1,7 @@
 from flask import Flask
 import os
 
-def created_app():
+def create_app():
     app = Flask(__name__)
 
     app.config.from_mapping(
@@ -13,4 +13,4 @@ def created_app():
     app.register_blueprint(portfolio.bp)
 
     return app
-app = created_app()
+app = create_app()
